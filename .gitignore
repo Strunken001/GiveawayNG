@@ -1,0 +1,8 @@
+logs/*
+_uploads/_content_cover/*
+_uploads/_music/*
+_uploads/_photos/*
+_uploads/_profile_pictures/*
+_uploads/_videos/*
+_admin/log/*
+.vs
