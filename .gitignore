@@ -6,3 +6,5 @@ _uploads/_profile_pictures/*
 _uploads/_videos/*
 _admin/log/*
 .vs
+vendor
+composer.lock

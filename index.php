@@ -1,7 +1,16 @@
 <?php
 	use PHPMailer\PHPMailer\PHPMailer;
 	use PHPMailer\PHPMailer\Exception;
+	use Dotenv\Dotenv;
 	session_start();
+
+	
+	if (file_exists('vendor/autoload.php')) {
+		require_once('vendor/autoload.php');
+	}
+
+	$dotenv = Dotenv::createImmutable(__DIR__);
+	$dotenv->load();
 
 	if(!file_exists('_core/_config.php')) {
 		header('location: installer.php');	
